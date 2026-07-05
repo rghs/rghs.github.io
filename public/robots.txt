@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rghs.github.io/sitemap.xml
