@@ -1,0 +1,100 @@
+{{ $disableImageOptimization := .Page.Site.Params.disableImageOptimization | default false }}
+{{ $bgImageUrl := "" }} {{/* Initialize variable for the background image URL */}}
+{{ $hideImage := .Params.hideFeatureImage | default false }} {{/* Check if image should be hidden */}}
+
+{{ if not $hideImage }} {{/* --- Only proceed if image is not hidden --- */}}
+
+  {{/* 1. PRIORITIZE: Check for external featured image URL */}}
+  {{ with .Params.cardExternal }}
+    {{ $bgImageUrl = . }} {{/* Use the external URL directly */}}
+  {{ else }}
+    {{/* 2. FALLBACK: If no external URL, use original Blowfish logic to find a LOCAL image */}}
+    {{ $images := $.Resources.ByType "image" }}
+    {{ $featured := $images.GetMatch "*feature*" }}
+    {{ if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end }}
+    {{/* Handling for '.Params.featureimage' - This seems complex, potentially involves remote fetch. */}}
+    {{/* We'll keep it but note that image optimization won't apply if it fetches a remote resource here */}}
+    {{ if and .Params.featureimage (not $featured) }}
+      {{ $url := .Params.featureimage }}
+      {{/* Attempt to fetch/get the resource. Handle potential errors if necessary. */}}
+      {{/* This might return a local or remote resource depending on the URL/setup */}}
+      {{ $featured = resources.GetRemote $url | default (resources.Get $url) }}
+    {{ end }}
+    {{/* Site default as the next fallback */}}
+    {{ if not $featured }}{{ with .Site.Params.defaultFeaturedImage }}{{ $featured = resources.Get . }}{{ end }}{{ end }}
+
+    {{/* Process the $featured resource if found (it should be a local resource or handled by GetRemote) */}}
+    {{ with $featured }}
+      {{/* Check if it's an SVG or optimization is disabled */}}
+      {{ if or $disableImageOptimization (strings.HasSuffix .RelPermalink ".svg") }}
+        {{ $bgImageUrl = .RelPermalink }} {{/* Use original relative permalink */}}
+      {{ else }}
+        {{/* Apply resize to the local image */}}
+        {{ with .Resize "600x" }}
+          {{ $bgImageUrl = .RelPermalink }} {{/* Use resized relative permalink */}}
+        {{ end }}
+      {{ end }}
+    {{ end }} {{/* End with $featured */}}
+  {{ end }} {{/* End else (no external URL) */}}
+
+{{ end }} {{/* --- End if not $hideImage --- */}}
+
+
+{{/* --- Link Structure --- */}}
+{{ with .Params.externalUrl }}
+<a href="{{ . }}" target="_blank" rel="external" class="min-w-full">
+{{ else }}
+<a href="{{ .RelPermalink }}" class="min-w-full">
+{{ end }}
+  <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+
+    {{/* --- Display the Background Image using the determined $bgImageUrl --- */}}
+    {{ with $bgImageUrl }}
+      {{/* Use the determined URL (external or processed local) */}}
+      <div class="w-full thumbnail_card nozoom" style="background-image:url({{ . | absURL }});"></div>
+    {{ else }}
+      {{/* Optional: Add a placeholder or leave empty if no image found and not hidden */}}
+      {{/* Example: <div class="w-full thumbnail_card nozoom bg-gray-200 dark:bg-gray-700"></div> */}}
+    {{ end }}
+
+    {{/* --- Rest of the card content (Draft Label, Title, Meta, Summary) --- */}}
+    {{/* NOTE: Removed the original og:image meta tags from here as they are better handled in head partials */}}
+
+    {{ if and .Draft .Site.Params.article.showDraftLabel }}
+    <span class="absolute top-0 right-0 m-2">
+      {{ partial "badge.html" (i18n "article.draft" | emojify) }}
+    </span>
+    {{ end }}
+
+    <div class="px-6 py-4">
+      {{ with .Params.externalUrl }}
+      <div>
+        <div
+          class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral">
+          {{ $.Title | emojify }}
+          <span class="text-xs align-top cursor-default text-neutral-400 dark:text-neutral-500">
+            <span class="rtl:hidden">↗</span>
+            <span class="ltr:hidden">↖</span>
+          </span>
+        </div>
+      </div>
+      {{ else }}
+      <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+        href="{{ .RelPermalink }}">{{ .Title | emojify }}</div>
+      {{ end }}
+
+      <div class="text-sm text-neutral-500 dark:text-neutral-400">
+        {{ partial "article-meta/basic.html" . }}
+      </div>
+
+      {{ if .Params.showSummary | default (.Site.Params.list.showSummary | default false) }}
+      <div class="py-1 prose dark:prose-invert">
+        {{ .Summary | plainify }}
+      </div>
+      {{ end }}
+    </div>
+    <div class="px-6 pt-4 pb-2">
+      {{/* Placeholder for potential footer content within the card */}}
+    </div>
+  </div> {{/* End main card div */}}
+</a> {{/* End link */}}

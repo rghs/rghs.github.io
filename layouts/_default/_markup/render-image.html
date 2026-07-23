@@ -1,0 +1,71 @@
+{{- /* layouts/_default/_markup/render-image.html */ -}}
+
+{{- $disableImageOptimization := .Page.Site.Params.disableImageOptimization | default false }}
+{{- $url := urls.Parse .Destination }}
+{{- $altText := .Text }}
+{{- $caption := .Title }}
+
+{{- /* ---- CDN Configuration ---- */ -}}
+{{- $cdnBaseURL := site.Params.cdnBaseURL | default "" }}
+{{- $cdnLocalAssetPrefix := site.Params.cdnLocalAssetPrefix | default "/cdn-assets/" }}
+{{- /* ---- End CDN Configuration ---- */ -}}
+
+{{- $isRemoteImage := findRE `^https?` $url.Scheme }}
+{{- $isCdnPath := and (not $isRemoteImage) (hasPrefix $url.Path $cdnLocalAssetPrefix) }}
+
+{{- if $isRemoteImage }}
+  {{- /* External image, use directly */ -}}
+  <figure>
+    <img class="my-0 rounded-md" loading="lazy" src="{{ $url.String }}" alt="{{ $altText }}" />
+    {{ with $caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+  </figure>
+{{- else if and $cdnBaseURL $isCdnPath }}
+  {{- /* Local path starting with CDN prefix: rewrite to use cdnBaseURL */ -}}
+  {{- $cdnRelativePath := strings.TrimPrefix $cdnLocalAssetPrefix $url.Path }}
+  {{- /* Ensure robust slash handling between base URL and relative path */ -}}
+  {{- $finalCdnSrc := printf "%s/%s" (strings.TrimSuffix "/" $cdnBaseURL) (strings.TrimPrefix "/" $cdnRelativePath) }}
+  <figure>
+    <img class="my-0 rounded-md" loading="lazy" src="{{ $finalCdnSrc }}" alt="{{ $altText }}" />
+    {{ with $caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+  </figure>
+{{- else }}
+  {{- /* Local path, not CDN prefix: use Blowfish theme's original logic for local resources */ -}}
+  {{- $resource := "" }}
+  {{- if $.Page.Resources.GetMatch ($url.String) }}
+    {{- $resource = $.Page.Resources.GetMatch ($url.String) }}
+  {{- else if resources.GetMatch ($url.String) }}
+    {{- $resource = resources.Get ($url.String) }}
+  {{- end }}
+  {{- with $resource }}
+    <figure>
+      {{- if or $disableImageOptimization (eq .MediaType.SubType "svg") }}
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        src="{{ .RelPermalink }}"
+        alt="{{ $altText }}"
+      />
+      {{- else }}
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        {{ (.Resize "330x").RelPermalink }} 330w,
+        {{ (.Resize "660x").RelPermalink }} 660w,
+        {{ (.Resize "1024x").RelPermalink }} 1024w,
+        {{ (.Resize "1320x").RelPermalink }} 2x"
+        data-zoom-src="{{ (.Resize "1320x").RelPermalink }}"
+        src="{{ (.Resize "660x").RelPermalink }}"
+        alt="{{ $altText }}"
+      />
+      {{- end }}
+      {{ with $caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+    </figure>
+  {{- else }}
+    {{- /* Local path, but resource not found by Hugo. Output path as-is (relative to site). */ -}}
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="{{ $url.String | absURL }}" alt="{{ $altText }}" />
+      {{ with $caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+    </figure>
+  {{- end }}
+{{- end }}

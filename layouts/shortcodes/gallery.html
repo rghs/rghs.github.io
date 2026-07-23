@@ -1,0 +1,39 @@
+{{ $cdnBaseUrl := site.Params.cdnBaseUrl }}
+{{ $cdnPrefix := site.Params.cdnLocalAssetPrefix }}
+
+{{ $id := delimit (slice "gallery" (partial "functions/uid.html" .)) "-" -}}
+{{ $content := .Inner -}}
+
+{{/* find all img tags */}}
+{{ range findRE `<img\s+[^>]*>` $content -}}
+  {{ $imgTag := . -}}
+  {{/* extract src attribute */}}
+  {{ with findRESubmatch `src=['"]([^'"]+)['"]` $imgTag -}}
+    {{ $srcAttr := index (index . 0) 0 -}}
+    {{ $srcValue := index (index . 0) 1 -}}
+    {{ $srcValueFinal := $srcValue -}}
+    
+    
+    {{ if and $cdnBaseUrl $cdnPrefix (hasPrefix $srcValue $cdnPrefix) }}
+        {{ $base := strings.TrimSuffix "/" $cdnBaseUrl }}
+        {{ $path := strings.TrimPrefix $cdnPrefix $srcValue }}
+        {{ $srcValueFinal = printf "%s/%s" $base $path }}
+    {{ else if or (hasPrefix $srcValue "http://") (hasPrefix $srcValue "https://") -}}
+      {{ with resources.GetRemote $srcValue -}}{{ $srcValueFinal = .RelPermalink -}}{{ end -}}
+    {{ else -}}
+      {{ with $.Page.Resources.GetMatch $srcValue -}}
+        {{ $srcValueFinal = .RelPermalink -}}
+      {{ else -}}
+        {{ with resources.GetMatch $srcValue -}}{{ $srcValueFinal = .RelPermalink -}}{{ end -}}
+      {{ end -}}
+    {{ end -}}
+
+    {{ $newTag := replace $imgTag $srcAttr (printf `src="%s"` $srcValueFinal) -}}
+    {{ $content = replace $content $imgTag $newTag -}}
+  {{ end -}}
+{{ end -}}
+
+{{ if not .Parent }}<div class="width-patch"></div>{{ end }}
+<div id="{{- $id -}}" class="gallery">
+  {{ $content | safeHTML -}}
+</div>
