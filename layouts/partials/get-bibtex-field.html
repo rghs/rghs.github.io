@@ -1,0 +1,38 @@
+{{/* 
+  layouts/partials/get-bibtex-field.html
+  Extracts the value of a specific field from a BibTeX entry string.
+
+  Usage:
+    {{ $title := partial "get-bibtex-field.html" (dict "bib" $bibtexString "field" "title") }}
+*/}}
+{{ $bib := .bib }}
+{{ $field := .field }}
+{{ $val := "" }}
+
+{{/* Pattern matches 'field = <value>' up until the next field or entry end */}}
+{{ $pattern := printf `(?i)(?:^|[\s,])%s\s*=\s*(.*?)(?:,\s*[a-zA-Z0-9_-]+\s*=|(?:\}\s*$|\}\s*@|\}\s*\n|\}$))` $field }}
+{{ $matches := findRE $pattern $bib 1 }}
+
+{{ if $matches }}
+  {{ $raw := index $matches 0 }}
+
+  {{/* 1. Remove 'field =' prefix */}}
+  {{ $prefixPattern := printf `(?is)^.*?\b%s\s*=\s*` $field }}
+  {{ $val = replaceRE $prefixPattern "" $raw }}
+
+  {{/* 2. Remove trailing field delimiter remnants */}}
+  {{ $val = replaceRE `(?:,\s*[a-zA-Z0-9_-]+\s*=|\}$|\}\s*@)$` "" $val }}
+
+  {{/* 3. Trim whitespace */}}
+  {{ $val = trim $val " \t\n\r" }}
+
+  {{/* 4. Strip outer enclosing double quotes ("...") or curly braces ({...}) */}}
+  {{ $val = replaceRE `^[\"{](.*)[\"}]$` "$1" $val }}
+
+  {{/* 5. Remove additional braces */}}
+  {{ $val = replace $val "{" "" }}
+  {{ $val = replace $val "}" "" }}
+
+{{ end }}
+
+{{ return $val }}

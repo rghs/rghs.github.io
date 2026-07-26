@@ -1,0 +1,54 @@
+{{/* Read all XML files */}}
+{{ $papers := slice }}
+
+{{ range readDir "data/works" }}
+  {{ if eq (path.Ext .Name) ".xml" }}
+  
+  {{ $xml := readFile (printf "data/works/%s" .Name) }}
+  {{ $work := transform.Unmarshal $xml }}
+  
+  {{/* Only include journal articles */}}
+    {{ if eq (index $work "type") "journal-article" }}
+
+      {{ $date := printf "%04d-%02d-%02d"
+          (int (default "0" (index $work "publication-date" "year")))
+          (int (default "1" (index $work "publication-date" "month")))
+          (int (default "1" (index $work "publication-date" "day"))) }}
+      
+      {{ $authors := slice }}
+      {{ range (index $work "contributors" "contributor") }}
+        {{ $authors = $authors | append (index . "credit-name") }}
+      {{ end }}
+
+      {{ $doi := "" }}
+
+      {{ range (index $work "external-ids" "external-id") }}
+          {{ if and (eq $doi "") (eq (index . "external-id-type") "doi") }}
+              {{ $doi = index . "external-id-value" }}
+          {{ end }}
+      {{ end }}
+
+      {{ $papers = $papers | append (dict
+          "date" $date
+          "year" (default "0" (index $work "publication-date" "year"))
+          "journal" (index $work "journal-title")
+          "doi" $doi
+          "title" (index $work "title" "title")
+          "authors" $authors
+          "bib" (index $work "citation" "citation-value")
+      ) }}
+
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* Sort chronologically */}}
+{{ $papers = sort $papers "date" "desc" }}
+
+<ol class="publication-list">
+{{ range $papers }}
+<li>
+    {{- partial "gsa-citation" . -}}
+</li>
+{{ end }}
+</ol>
