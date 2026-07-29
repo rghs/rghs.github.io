@@ -4,4 +4,6 @@ date = {{ .Date }}
 draft = true
 description = ""
 summary = ""
+categories = [""]
+tags = [""]
 +++
