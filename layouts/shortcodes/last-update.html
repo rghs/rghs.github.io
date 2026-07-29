@@ -1,0 +1,7 @@
+{{ $fmt := .Get 0 | default "2000-01-01" }}
+
+{{ if .Page.Lastmod }}
+    {{- .Page.Lastmod | time.Format $fmt -}}
+{{ else }}
+    {{- .Page.Date | time.Format $fmt -}}
+{{ end }}
