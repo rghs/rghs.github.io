@@ -4,22 +4,23 @@ lastmod = "2026-07-29"
 showDate = false
 showWordCount = false
 showReadingTime = false
+showTableOfContents = true
 draft = true
 title = 'About me'
 cardExternal = "https://pub-71a39ffbcca34dce91b84015607be14a.r2.dev/2025-05-17_japan_holiday/003.webp"
-featuredImageExternal = "https://pub-71a39ffbcca34dce91b84015607be14a.r2.dev/2025-05-17_japan_holiday/002.webp"
+featureimage = "https://pub-71a39ffbcca34dce91b84015607be14a.r2.dev/2025-05-17_japan_holiday/002.webp"
 heroStyle = "background"
 +++
 
 Hi! I’m Rob Hayes, and this is my site documenting my various projects/travels from my geoscience research to my hobby coding projects. 
 
-# CV
+## CV
 
 >[!IMPORTANT]- Download CV PDF
 > To download a PDF version of my CV, [click here](pdf/cv-current.pdf).
 {icon="download"}
 
-## Employment
+### Employment
 
 {{< timeline >}}
 
@@ -68,7 +69,7 @@ Processed 600 samples of lacustrine sediment for Loss On Ignition analysis, mana
 
 {{</ timeline >}}
 
-## Education
+### Education
 
 {{< timeline >}}
 
@@ -96,13 +97,13 @@ Processed 600 samples of lacustrine sediment for Loss On Ignition analysis, mana
 
 {{</ timeline >}}
 
-## Volunteering
+### Volunteering
 
 - Organised junior education section at Tucson Gem and Mineral Show in 2020 and 2022, interacting with hundreds of guests at the largest gem trade show in the world. Operated successful event with very limited budget.
 - Acted as Audio/Visual technician for GeoDaze 2022, a geological conference held at the University of Arizona, ensuring the smooth operation of technology during presentations.
 - Served as treasurer for the Association of Women Geoscientists (AWG) Southern Arizona Chapter during 2021 and 2022, managing funds and creating an automated system for reporting budgets to the central AWG organisation.
 
-# Publications
+## Publications
 
 Below is a list of my publications (current as of {{< last-update "2 Jan 2006" >}}). For the most recent information, please check my [ORCiD Profile](https://orcid.org/my-orcid?orcid=0000-0001-7288-3445).
 
