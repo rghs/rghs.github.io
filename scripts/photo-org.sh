@@ -34,10 +34,11 @@ done
 
 # move originals
 echo "Moving originals to subdirectory..."
-mkdir -p $1/originals
+originals_path="$1/../originals/$(basename $1)"
+mkdir -p $originals_path
 for photo in "${photos[@]}"
 do
-    mv $photo $1/originals
+    mv $photo $originals_path
 done
 
 echo "Finished!"
