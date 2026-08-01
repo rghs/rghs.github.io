@@ -14,10 +14,16 @@ fi
 # Process featureimage
 echo "Processing feature..."
 magick $2 -resize 1920x1920\> -quality 85 "${1}/feature.webp"
+if [ $? -ne 0 ]; then
+    exit 1
+fi
 
 # Process card
 echo "Processing card..."
 magick $3 -resize 600x600\> -quality 80 "${1}/card.webp"
+if [ $? -ne 0 ]; then
+    exit 1
+fi
 
 # Process photos for gallery
 readarray -d '' photos< <(find $1 -type f \( -iname *.jpg -o -iname *.heic -o -iname *.nef \) -print0)
@@ -29,6 +35,9 @@ do
     echo "Processing image $i of $photocount..."
     filename=$(printf "$1/%02d.webp" "$i")
     magick $photo -resize 2000x2000\> -quality 90 $filename
+    if [ $? -ne 0 ]; then
+        exit 1
+    fi
     (( i ++ ))
 done
 
