@@ -1,14 +1,15 @@
 +++
 date = '2026-06-28T18:54:32+01:00'
 lastmod = "2026-07-29"
+
 showDate = false
 showWordCount = false
 showReadingTime = false
 showTableOfContents = true
+showAuthor = true
+
 draft = true
 title = 'About me'
-cardExternal = "https://pub-71a39ffbcca34dce91b84015607be14a.r2.dev/2025-05-17_japan_holiday/003.webp"
-featureimage = "https://pub-71a39ffbcca34dce91b84015607be14a.r2.dev/2025-05-17_japan_holiday/002.webp"
 heroStyle = "background"
 +++
 
