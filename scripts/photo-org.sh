@@ -1,7 +1,5 @@
 #!/bin/bash
 
-rotate
-
 # Requires bash version >=4.4
 if [ "${BASH_VERSINFO[0]}" -lt 4 -a "${BASH_VERSINFO[1]}" -lt 4 ]; then
     echo "This script relies on bash version 4.4 or later. Your version is $BASH_VERSION"
