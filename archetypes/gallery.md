@@ -30,6 +30,7 @@ tags = [""]
   {{< figure src="{{ .Site.Params.cdnLocalAssetPrefix }}/{{ .Name }}/07.webp" figureClass="grid-w50 md:grid-w33 xl:grid-w25" >}}
   {{< figure src="{{ .Site.Params.cdnLocalAssetPrefix }}/{{ .Name }}/08.webp" figureClass="grid-w50 md:grid-w33 xl:grid-w25" >}}
   {{< figure src="{{ .Site.Params.cdnLocalAssetPrefix }}/{{ .Name }}/09.webp" figureClass="grid-w50 md:grid-w33 xl:grid-w25" >}}
+  {{< figure src="{{ .Site.Params.cdnLocalAssetPrefix }}/{{ .Name }}/10.webp" figureClass="grid-w50 md:grid-w33 xl:grid-w25" >}}
   {{< figure src="{{ .Site.Params.cdnLocalAssetPrefix }}/{{ .Name }}/11.webp" figureClass="grid-w50 md:grid-w33 xl:grid-w25" >}}
   {{< figure src="{{ .Site.Params.cdnLocalAssetPrefix }}/{{ .Name }}/12.webp" figureClass="grid-w50 md:grid-w33 xl:grid-w25" >}}
   {{< figure src="{{ .Site.Params.cdnLocalAssetPrefix }}/{{ .Name }}/13.webp" figureClass="grid-w50 md:grid-w33 xl:grid-w25" >}}
