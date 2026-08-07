@@ -1,7 +1,7 @@
 +++
 title = "Welsh Basin Field Trip"
 date = 2016-03-14T20:48:16+01:00
-draft = true
+draft = false
 
 description = "Photos from a paleontology focused field trip to Wales."
 summary = "Photos from a paleontology focused field trip to Wales."

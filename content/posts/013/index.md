@@ -1,7 +1,7 @@
 +++
 title = "Holiday in Japan"
 date = 2025-05-17T21:41:30+01:00
-draft = true
+draft = false
 
 description = "Holiday photos from Tokyo and Kyoto."
 summary = "Holiday photos from Tokyo and Kyoto."
@@ -14,7 +14,7 @@ showAuthor = false
 featureimage = "https://pub-71a39ffbcca34dce91b84015607be14a.r2.dev/013/feature.webp"
 card = "https://pub-71a39ffbcca34dce91b84015607be14a.r2.dev/013/card.webp"
 categories = ["Galleries"]
-tags = [""]
+tags = ["Japan", "Tokyo", "Kyoto", "Kanagawa", "Holiday"]
 +++
 
 Some holiday snaps from my trip to Japan, just to balance out the preponderence of rocks. There are still some rocks though.

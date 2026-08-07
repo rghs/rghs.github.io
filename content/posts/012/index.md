@@ -1,7 +1,7 @@
 +++
 title = "Summer Fieldwork 2022"
 date = 2022-05-21T21:41:27+01:00
-draft = true
+draft = false
 
 description = "Photos from the final field season of my PhD."
 summary = "Photos from the final field season of my PhD."

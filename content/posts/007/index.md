@@ -1,7 +1,7 @@
 +++
 title = "Autumn Fieldwork 2019"
 date = 2019-10-15T21:41:13+01:00
-draft = true
+draft = false
 
 description = "Photos from an autumnal Colorado Plateau."
 summary = "Photos from an autumnal Colorado Plateau."

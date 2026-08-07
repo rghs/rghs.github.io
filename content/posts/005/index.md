@@ -1,7 +1,7 @@
 +++
 title = "Southern Arizona Fieldtrip"
 date = 2019-03-02T21:41:05+01:00
-draft = true
+draft = false
 
 description = "Photos from Indian Bread Rocks, S. AZ."
 summary = "Photos from Indian Bread Rocks, S. AZ."

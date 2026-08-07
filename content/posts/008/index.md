@@ -1,7 +1,7 @@
 +++
 title = "Mt. Wrightson"
 date = 2020-04-19T21:41:16+01:00
-draft = true
+draft = false
 
 description = "Photos from Mt. Wrightson, S. AZ."
 summary = "Photos from Mt. Wrightson, S. AZ."

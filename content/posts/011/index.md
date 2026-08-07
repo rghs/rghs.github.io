@@ -1,7 +1,7 @@
 +++
 title = "Summer Fieldwork 2021"
 date = 2021-06-12T21:41:25+01:00
-draft = true
+draft = false
 
 description = "Photos from across the Colorado Plateau, including a visit to Lake Powell."
 summary = "Photos from across the Colorado Plateau, including a visit to Lake Powell."

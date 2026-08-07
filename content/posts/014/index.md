@@ -1,7 +1,7 @@
 +++
 title = "FSM Web Uploader"
 date = 2026-04-05T21:41:33+01:00
-draft = true
+draft = false
 description = "A simple program for managing skating competition websites."
 summary = "Building an FTP program with PySide6 for skating competitions."
 showTableOfContents = true

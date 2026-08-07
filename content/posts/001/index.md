@@ -1,6 +1,6 @@
 +++
 title = 'Catalunya Fieldwork'
-draft = true
+draft = false
 date = '2015-06-01T20:25:57+01:00'
 
 description = "Photos from Vallcebre in the Spanish Pyrenees."

@@ -1,7 +1,7 @@
 +++
 title = "Summer Fieldwork 2020"
 date = 2020-05-25T21:41:19+01:00
-draft = true
+draft = false
 
 description = "Photos from my 2020 fieldwork season."
 summary = "Photos from my 2020 fieldwork season."

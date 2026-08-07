@@ -1,7 +1,7 @@
 +++
 title = "Sicily Fieldwork"
 date = 2017-09-21T21:40:48+01:00
-draft = true
+draft = false
 
 description = "Photos from fieldwork in eastern Sicily."
 summary = "Photos from fieldwork in eastern Sicily."
