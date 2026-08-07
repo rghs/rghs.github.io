@@ -8,7 +8,7 @@ showReadingTime = false
 showTableOfContents = true
 showAuthor = true
 
-draft = true
+draft = false
 title = 'About me'
 heroStyle = "background"
 +++
