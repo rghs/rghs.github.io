@@ -11,8 +11,8 @@ showReadingTime = false
 showTableOfContents = true
 showAuthor = false
 
-featureimage = "https://pub-71a39ffbcca34dce91b84015607be14a.r2.dev/013/feature.webp"
-card = "https://pub-71a39ffbcca34dce91b84015607be14a.r2.dev/013/card.webp"
+featureimage = "https://img.rghayes.com/013/feature.webp"
+card = "https://img.rghayes.com/013/card.webp"
 categories = ["Galleries"]
 tags = ["Japan", "Tokyo", "Kyoto", "Kanagawa", "Holiday"]
 +++

@@ -11,8 +11,8 @@ showReadingTime = false
 showTableOfContents = true
 showAuthor = false
 
-featureimage = "https://pub-71a39ffbcca34dce91b84015607be14a.r2.dev/008/feature.webp"
-card = "https://pub-71a39ffbcca34dce91b84015607be14a.r2.dev/008/card.webp"
+featureimage = "https://img.rghayes.com/008/feature.webp"
+card = "https://img.rghayes.com/008/card.webp"
 
 categories = ["Galleries"]
 tags = ["USA", "Arizona", "Holiday", "Geology", "Mountains"]

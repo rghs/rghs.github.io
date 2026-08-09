@@ -11,8 +11,8 @@ showReadingTime = false
 showTableOfContents = true
 showAuthor = false
 
-featureimage = "https://pub-71a39ffbcca34dce91b84015607be14a.r2.dev/004/feature.webp"
-card = "https://pub-71a39ffbcca34dce91b84015607be14a.r2.dev/004/card.webp"
+featureimage = "https://img.rghayes.com/004/feature.webp"
+card = "https://img.rghayes.com/004/card.webp"
 
 categories = ["Galleries"]
 tags = ["Italy", "Sicily", "Fieldwork", "Geology", "Volcanics"]

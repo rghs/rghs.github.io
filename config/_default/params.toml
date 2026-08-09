@@ -10,7 +10,7 @@ defaultAppearance = "dark" # valid options: light or dark
 autoSwitchAppearance = true
 
 # CDN parameters: info from here: https://www.heykyo.com/posts/2025/05/comprehensive-guide-to-cloudflare-r2-image-integration-in-hugo/
-cdnBaseUrl = "https://pub-71a39ffbcca34dce91b84015607be14a.r2.dev"
+cdnBaseUrl = "https://img.rghayes.com"
 cdnLocalAssetPrefix = "/r2/"
 
 enableA11y = false

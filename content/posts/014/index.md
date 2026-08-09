@@ -5,7 +5,7 @@ draft = false
 description = "A simple program for managing skating competition websites."
 summary = "Building an FTP program with PySide6 for skating competitions."
 showTableOfContents = true
-card = "https://pub-71a39ffbcca34dce91b84015607be14a.r2.dev/014/fsm-web-uploader.png"
+card = "https://img.rghayes.com/014/fsm-web-uploader.png"
 categories = ["Programming", "Skating"]
 tags = ["Figure skating", "Python", "Qt"]
 +++
