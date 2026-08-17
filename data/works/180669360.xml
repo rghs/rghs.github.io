@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<work:work xmlns:address="http://www.orcid.org/ns/address" xmlns:email="http://www.orcid.org/ns/email" xmlns:history="http://www.orcid.org/ns/history" xmlns:employment="http://www.orcid.org/ns/employment" xmlns:education="http://www.orcid.org/ns/education" xmlns:other-name="http://www.orcid.org/ns/other-name" xmlns:deprecated="http://www.orcid.org/ns/deprecated" xmlns:funding="http://www.orcid.org/ns/funding" xmlns:research-resource="http://www.orcid.org/ns/research-resource" xmlns:service="http://www.orcid.org/ns/service" xmlns:researcher-url="http://www.orcid.org/ns/researcher-url" xmlns:distinction="http://www.orcid.org/ns/distinction" xmlns:internal="http://www.orcid.org/ns/internal" xmlns:membership="http://www.orcid.org/ns/membership" xmlns:person="http://www.orcid.org/ns/person" xmlns:personal-details="http://www.orcid.org/ns/personal-details" xmlns:bulk="http://www.orcid.org/ns/bulk" xmlns:common="http://www.orcid.org/ns/common" xmlns:record="http://www.orcid.org/ns/record" xmlns:keyword="http://www.orcid.org/ns/keyword" xmlns:activities="http://www.orcid.org/ns/activities" xmlns:qualification="http://www.orcid.org/ns/qualification" xmlns:external-identifier="http://www.orcid.org/ns/external-identifier" xmlns:error="http://www.orcid.org/ns/error" xmlns:preferences="http://www.orcid.org/ns/preferences" xmlns:invited-position="http://www.orcid.org/ns/invited-position" xmlns:work="http://www.orcid.org/ns/work" xmlns:peer-review="http://www.orcid.org/ns/peer-review" put-code="180669360" visibility="public">
+    <common:created-date>2025-03-23T11:55:28.066Z</common:created-date>
+    <common:last-modified-date>2025-03-23T11:55:28.066Z</common:last-modified-date>
+    <common:source>
+        <common:source-orcid>
+            <common:uri>https://orcid.org/0000-0001-7288-3445</common:uri>
+            <common:path>0000-0001-7288-3445</common:path>
+            <common:host>orcid.org</common:host>
+        </common:source-orcid>
+        <common:source-name>Robert Hayes</common:source-name>
+    </common:source>
+    <work:title>
+        <common:title>Sedimentological and paleoslope reconstruction of the Late Triassic Chinle Formation, western USA: Constraints on models for dynamic subsidence</common:title>
+    </work:title>
+    <work:journal-title>Geological Society of America Bulletin</work:journal-title>
+    <work:short-description>The Shinarump and Gartra Members form the basal part of the Chinle Formation in western USA and are the deposits of a river system that flowed northwestward from the Ouachita Orogen to the Auld Lang Syne basin during the Late Triassic. Previous estimates of paleoslope for this river have been limited by low numbers of data points. This study, therefore, presents a dataset of 1133 cross-set height measurements to form the basis for paleoslope reconstructions, and as part of a facies analysis which additionally includes clast counts identifying a total of 13,584 clasts, grain-size analyses measuring 7400 grains and paleoflow analyses composed of a further 975 trough cross-sets.&lt;/jats:p&gt;
+               &lt;jats:p&gt;Lithofacies analyses describe the Shinarump and Gartra Members as the deposits of a braided river system and identify previously unrecognized antidune deposits at the Vermilion Cliffs, northern Arizona. This suggests that the sandy facies at the top of the Shinarump Member may be deposits of flash flood events. Grain-size and cross-set height analysis allow for estimates of paleoslope to be produced, which range from 9.6 × 10−5 to 4.3 × 10−4, with a median value ∼2.5 × 10−4, on par with many modern continental scale rivers. These estimates predict that the upper surface of the Chinle basin was ∼75−150 m above sea level on the Colorado Plateau at its time of deposition. To reveal the amount of subsidence necessary to accommodate the Chinle Formation, we tied a 2-D backstripping analysis to the calculated paleoslope reconstruction. The resulting basin accommodation distribution describes a low-magnitude (hundreds of meters), long-wavelength (&amp;amp;gt;1000 km) deflection, fully compatible with characteristics of dynamic topography. The combination of subsidence analysis with an independent paleoelevation metric can be applied to other members of the Chinle Formation and may be useful in other similar contexts where dynamic topography is difficult to quantify.</work:short-description>
+    <work:citation>
+        <work:citation-type>bibtex</work:citation-type>
+        <work:citation-value>@article{10.1130/B37816.1,
+    author = {Hayes, Robert G. and DeCelles, Peter G. and Amadori, Chiara},
+    title = {Sedimentological and paleoslope reconstruction of the Late Triassic Chinle Formation, western USA: Constraints on models for dynamic subsidence},
+    journal = {GSA Bulletin},
+    year = {2025},
+    month = {03},
+    abstract = {The Shinarump and Gartra Members form the basal part of the Chinle Formation in western USA and are the deposits of a river system that flowed northwestward from the Ouachita Orogen to the Auld Lang Syne basin during the Late Triassic. Previous estimates of paleoslope for this river have been limited by low numbers of data points. This study, therefore, presents a dataset of 1133 cross-set height measurements to form the basis for paleoslope reconstructions, and as part of a facies analysis which additionally includes clast counts identifying a total of 13,584 clasts, grain-size analyses measuring 7400 grains and paleoflow analyses composed of a further 975 trough cross-sets. Lithofacies analyses describe the Shinarump and Gartra Members as the deposits of a braided river system and identify previously unrecognized antidune deposits at the Vermilion Cliffs, northern Arizona. This suggests that the sandy facies at the top of the Shinarump Member may be deposits of flash flood events. Grain-size and cross-set height analysis allow for estimates of paleoslope to be produced, which range from 9.6 × 10−5 to 4.3 × 10−4, with a median value ∼2.5 × 10−4, on par with many modern continental scale rivers. These estimates predict that the upper surface of the Chinle basin was ∼75−150 m above sea level on the Colorado Plateau at its time of deposition. To reveal the amount of subsidence necessary to accommodate the Chinle Formation, we tied a 2-D backstripping analysis to the calculated paleoslope reconstruction. The resulting basin accommodation distribution describes a low-magnitude (hundreds of meters), long-wavelength (\&amp;gt;1000 km) deflection, fully compatible with characteristics of dynamic topography. The combination of subsidence analysis with an independent paleoelevation metric can be applied to other members of the Chinle Formation and may be useful in other similar contexts where dynamic topography is difficult to quantify. },
+    issn = {0016-7606},
+    doi = {10.1130/B37816.1},
+    url = {https://doi.org/10.1130/B37816.1},
+    eprint = {https://pubs.geoscienceworld.org/gsa/gsabulletin/article-pdf/doi/10.1130/B37816.1/7136946/b37816.pdf},
+}</work:citation-value>
+    </work:citation>
+    <work:type>journal-article</work:type>
+    <common:publication-date>
+        <common:year>2025</common:year>
+        <common:month>03</common:month>
+        <common:day>11</common:day>
+    </common:publication-date>
+    <common:external-ids>
+        <common:external-id>
+            <common:external-id-type>doi</common:external-id-type>
+            <common:external-id-value>10.1130/b37816.1</common:external-id-value>
+            <common:external-id-normalized transient="true">10.1130/b37816.1</common:external-id-normalized>
+            <common:external-id-url>https://doi.org/10.1130/b37816.1</common:external-id-url>
+            <common:external-id-relationship>self</common:external-id-relationship>
+        </common:external-id>
+        <common:external-id>
+            <common:external-id-type>issn</common:external-id-type>
+            <common:external-id-value>0016-7606</common:external-id-value>
+            <common:external-id-normalized transient="true">0016-7606</common:external-id-normalized>
+            <common:external-id-url>https://portal.issn.org/resource/ISSN/0016-7606</common:external-id-url>
+            <common:external-id-relationship>part-of</common:external-id-relationship>
+        </common:external-id>
+        <common:external-id>
+            <common:external-id-type>issn</common:external-id-type>
+            <common:external-id-value>1943-2674</common:external-id-value>
+            <common:external-id-normalized transient="true">1943-2674</common:external-id-normalized>
+            <common:external-id-url>https://portal.issn.org/resource/ISSN/1943-2674</common:external-id-url>
+            <common:external-id-relationship>part-of</common:external-id-relationship>
+        </common:external-id>
+    </common:external-ids>
+    <common:url>http://dx.doi.org/10.1130/b37816.1</common:url>
+    <work:contributors>
+        <work:contributor>
+            <common:contributor-orcid/>
+            <work:credit-name>Robert G. Hayes</work:credit-name>
+            <work:contributor-attributes>
+                <work:contributor-role>author</work:contributor-role>
+            </work:contributor-attributes>
+        </work:contributor>
+        <work:contributor>
+            <common:contributor-orcid/>
+            <work:credit-name>Peter G. DeCelles</work:credit-name>
+            <work:contributor-attributes>
+                <work:contributor-role>author</work:contributor-role>
+            </work:contributor-attributes>
+        </work:contributor>
+        <work:contributor>
+            <common:contributor-orcid/>
+            <work:credit-name>Chiara Amadori</work:credit-name>
+            <work:contributor-attributes>
+                <work:contributor-role>author</work:contributor-role>
+            </work:contributor-attributes>
+        </work:contributor>
+    </work:contributors>
+    <common:language-code>en</common:language-code>
+    <common:country>US</common:country>
+</work:work>

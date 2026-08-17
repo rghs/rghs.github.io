@@ -1,0 +1,77 @@
+#!/bin/bash
+
+# Requires bash version >=4.4
+if [ "${BASH_VERSINFO[0]}" -lt 4 -a "${BASH_VERSINFO[1]}" -lt 4 ]; then
+    echo "This script relies on bash version 4.4 or later. Your version is $BASH_VERSION"
+    exit 1
+fi
+
+if [ "$#" -ne 3 ]; then
+    echo "Usage: $0 <image_directory> <featureimage> <cardimage>"
+    exit 1
+fi
+
+# Process featureimage
+echo "Processing feature..."
+magick $2 -resize 1920x1920\> -quality 85 "${1}/feature.webp"
+if [ $? -ne 0 ]; then
+    filename=$(basename $2)
+    extension=$(echo "${filename##*.}" | tr '[:upper:]' '[:lower:]')
+    if [ "$extension" = "heic" ]; then
+        heif-convert $2 temp.png
+        magick temp.png -resize 1920x1920\> -quality 85 "${1}/feature.webp"
+        rm temp.png
+    else
+        exit 1
+    fi
+fi
+
+# Process card
+echo "Processing card..."
+magick $3 -resize 600x600\> -quality 80 "${1}/card.webp"
+if [ $? -ne 0 ]; then
+    filename=$(basename $3)
+    extension=$(echo "${filename##*.}" | tr '[:upper:]' '[:lower:]')
+    if [ "$extension" = "heic" ]; then
+        heif-convert $3 temp.png
+        magick temp.png -resize 600x600\> -quality 80 "${1}/card.webp"
+        rm temp.png
+    else
+        exit 1
+    fi
+fi
+
+# Process photos for gallery
+readarray -d '' photos< <(find $1 -type f \( -iname *.jpg -o -iname *.heic -o -iname *.nef \) -print0)
+
+i=1
+photocount=${#photos[@]}
+for photo in "${photos[@]}"
+do
+    echo "Processing image $i of $photocount..."
+    out_file=$(printf "$1/%02d.webp" "$i")
+    magick $photo -resize 2000x2000\> -quality 90 -auto-orient $out_file
+    if [ $? -ne 0 ]; then
+        filename=$(basename $photo)
+        extension=$(echo "${filename##*.}" | tr '[:upper:]' '[:lower:]')
+        if [ "$extension" = "heic" ]; then
+            heif-convert $photo temp.png
+            magick temp.png -resize 1920x1920\> -quality 90 -auto-orient $out_file
+            rm temp.png
+        else
+            exit 1
+        fi
+    fi
+    (( i ++ ))
+done
+
+# move originals
+echo "Moving originals to subdirectory..."
+originals_path="$1/../originals/$(basename $1)"
+mkdir -p $originals_path
+for photo in "${photos[@]}"
+do
+    mv $photo $originals_path
+done
+
+echo "Finished!"

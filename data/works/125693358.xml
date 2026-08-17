@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<work:work xmlns:address="http://www.orcid.org/ns/address" xmlns:email="http://www.orcid.org/ns/email" xmlns:history="http://www.orcid.org/ns/history" xmlns:employment="http://www.orcid.org/ns/employment" xmlns:education="http://www.orcid.org/ns/education" xmlns:other-name="http://www.orcid.org/ns/other-name" xmlns:deprecated="http://www.orcid.org/ns/deprecated" xmlns:funding="http://www.orcid.org/ns/funding" xmlns:research-resource="http://www.orcid.org/ns/research-resource" xmlns:service="http://www.orcid.org/ns/service" xmlns:researcher-url="http://www.orcid.org/ns/researcher-url" xmlns:distinction="http://www.orcid.org/ns/distinction" xmlns:internal="http://www.orcid.org/ns/internal" xmlns:membership="http://www.orcid.org/ns/membership" xmlns:person="http://www.orcid.org/ns/person" xmlns:personal-details="http://www.orcid.org/ns/personal-details" xmlns:bulk="http://www.orcid.org/ns/bulk" xmlns:common="http://www.orcid.org/ns/common" xmlns:record="http://www.orcid.org/ns/record" xmlns:keyword="http://www.orcid.org/ns/keyword" xmlns:activities="http://www.orcid.org/ns/activities" xmlns:qualification="http://www.orcid.org/ns/qualification" xmlns:external-identifier="http://www.orcid.org/ns/external-identifier" xmlns:error="http://www.orcid.org/ns/error" xmlns:preferences="http://www.orcid.org/ns/preferences" xmlns:invited-position="http://www.orcid.org/ns/invited-position" xmlns:work="http://www.orcid.org/ns/work" xmlns:peer-review="http://www.orcid.org/ns/peer-review" put-code="125693358" visibility="public">
+    <common:created-date>2023-01-02T20:53:33.985Z</common:created-date>
+    <common:last-modified-date>2026-01-22T21:29:11.533Z</common:last-modified-date>
+    <common:source>
+        <common:source-orcid>
+            <common:uri>https://orcid.org/0000-0001-7288-3445</common:uri>
+            <common:path>0000-0001-7288-3445</common:path>
+            <common:host>orcid.org</common:host>
+        </common:source-orcid>
+        <common:source-name>Robert Hayes</common:source-name>
+    </common:source>
+    <work:title>
+        <common:title>Reconstructing paleosinuosity and sedimentary mass balance in the Upper Triassic Shinarump paleoriver in Utah and Arizona, U.S.A.</common:title>
+    </work:title>
+    <work:journal-title>Journal of Sedimentary Research</work:journal-title>
+    <work:short-description>&lt;jats:title&gt;ABSTRACT&lt;/jats:title&gt;
+               &lt;jats:p&gt;The Upper Triassic Shinarump Member forms the basal part of the Chinle Formation in the western interior United States and was deposited by a continental-scale fluvial system which ran approximately 2,500 km from the Ouachita Orogen in the east into the Auld Lang Syne marine basin in the west. Previous studies of the Shinarump Member have concluded that the deposits represent a braided-river system but have not produced estimates for paleo-sinuosity and paleo-discharge. Recent advances in sedimentology allow detailed morphometric assessment of the nature of the river system that deposited the Shinarump Member enabling us to produce quantitative estimates for these parameters. We therefore present architectural data from the Shinarump Member in northern Arizona and Utah, supported by lithofacies data and 39 sandstone petrographic analyses, and a dataset of 4,298 paleocurrent measurements from trough cross-strata.&lt;/jats:p&gt;
+               &lt;jats:p&gt;Lithofacies and architectural analysis supports previous interpretations of the Shinarump and equivalent strata as braided-river deposits. Petrographic analysis shows that the Shinarump is dominated by monocrystalline quartz and exhibits low spatial variation in composition, ranging from 85.4% to 99.8% total quartz. Paleocurrent measurements are used to calculate the channel sinuosity of the fluvial system as varying between 1.02 and 1.77, with a median value of 1.33 (compared to the Yangtze River, ranging from 1.05 to 1.50 and the Ganges–Brahmaputra, ranging from 1.05 to 1.13 in their lower 250 km). Paleohydrological estimates using data from the architectural surveys produce slope estimates from 2.01 × 10–4 to 6.51 × 10–4 and bankfull discharge estimates from 4.36 × 103 m3 s–1 to 2.38 × 104 m3 s–1 for individual channels, comparable to extant continental-scale fluvial systems. Estimates of lifetime sediment transport volume range from 7.75 × 104 km3 to 6.09 × 105 km3, which are in order-of-magnitude agreement with estimates for the volume of the depositional sink (1.35 × 105 km3 to 4.17 × 105 km3). These results demonstrate the potential for paleohydrologic estimates to provide new avenues for analysis of heavily studied units.&lt;/jats:p&gt;</work:short-description>
+    <work:citation>
+        <work:citation-type>bibtex</work:citation-type>
+        <work:citation-value>@article{Hayes_2022,	doi = {10.2110/jsr.2021.122},	url = {https://doi.org/10.2110%2Fjsr.2021.122},	year = 2022,	month = {dec},	publisher = {Society for Sedimentary Geology},	volume = {92},	number = {12},	pages = {1207--1232},	author = {Robert Hayes and Peter DeCelles},	title = {Reconstructing paleosinuosity and sedimentary mass balance in the Upper Triassic Shinarump paleoriver in Utah and Arizona, U.S.A.},	journal = {Journal of Sedimentary Research}}</work:citation-value>
+    </work:citation>
+    <work:type>journal-article</work:type>
+    <common:publication-date>
+        <common:year>2022</common:year>
+        <common:month>12</common:month>
+        <common:day>28</common:day>
+    </common:publication-date>
+    <common:external-ids>
+        <common:external-id>
+            <common:external-id-type>doi</common:external-id-type>
+            <common:external-id-value>10.2110/jsr.2021.122</common:external-id-value>
+            <common:external-id-normalized transient="true">10.2110/jsr.2021.122</common:external-id-normalized>
+            <common:external-id-url>https://doi.org/10.2110/jsr.2021.122</common:external-id-url>
+            <common:external-id-relationship>self</common:external-id-relationship>
+        </common:external-id>
+        <common:external-id>
+            <common:external-id-type>issn</common:external-id-type>
+            <common:external-id-value>1938-3681</common:external-id-value>
+            <common:external-id-normalized transient="true">1938-3681</common:external-id-normalized>
+            <common:external-id-url>https://portal.issn.org/resource/ISSN/1938-3681</common:external-id-url>
+            <common:external-id-relationship>part-of</common:external-id-relationship>
+        </common:external-id>
+        <common:external-id>
+            <common:external-id-type>issn</common:external-id-type>
+            <common:external-id-value>1527-1404</common:external-id-value>
+            <common:external-id-normalized transient="true">1527-1404</common:external-id-normalized>
+            <common:external-id-url>https://portal.issn.org/resource/ISSN/1527-1404</common:external-id-url>
+            <common:external-id-relationship>part-of</common:external-id-relationship>
+        </common:external-id>
+    </common:external-ids>
+    <common:url>http://dx.doi.org/10.2110/jsr.2021.122</common:url>
+    <work:contributors>
+        <work:contributor>
+            <common:contributor-orcid/>
+            <work:credit-name>Robert Hayes</work:credit-name>
+            <work:contributor-attributes>
+                <work:contributor-role>author</work:contributor-role>
+            </work:contributor-attributes>
+        </work:contributor>
+        <work:contributor>
+            <common:contributor-orcid/>
+            <work:credit-name>Peter DeCelles</work:credit-name>
+            <work:contributor-attributes>
+                <work:contributor-role>author</work:contributor-role>
+            </work:contributor-attributes>
+        </work:contributor>
+    </work:contributors>
+    <common:language-code>en</common:language-code>
+    <common:country>US</common:country>
+</work:work>

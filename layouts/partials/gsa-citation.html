@@ -1,0 +1,31 @@
+{{ $bibtex := .bib }}
+{{ $authors := .authors }}
+
+{{ $formattedAuthors := slice }}
+{{ range $authors }}
+{{ $formattedAuthors = $formattedAuthors | append (partial "gsa-author" .) }}
+{{ end }}
+{{ $authorCount := len $formattedAuthors }}
+
+{{ $year   := .year }}
+{{ $doi    := .doi }}
+{{ $journal := .journal }}
+{{ $title := .title }}
+
+{{ $volume := partial "get-bibtex-field" (dict "bib" $bibtex "field" "volume") }}
+{{ $issue := partial "get-bibtex-field" (dict "bib" $bibtex "field" "number") }}
+{{ $pages := replace (partial "get-bibtex-field" (dict "bib" $bibtex "field" "pages")) "--" "-" }}
+
+<p>{{ range $index, $name := $formattedAuthors }}
+  {{ if or (eq $name "Hayes, R.") (eq . "Hayes, R.G.") }}
+  <strong>{{- $name -}}</strong>
+  {{- else -}}
+  {{- $name -}}
+  {{ end }}{{ if eq (add $index 2) $authorCount }} and {{- else -}}, {{ end }}
+  {{ end }}{{ $year }}, {{ $title }}: {{ $journal -}}
+  {{ if ne $volume "" }}, v. {{ $volume }}{{ end -}}
+  {{ if ne $issue "" }}, no. {{ $issue }}{{ end -}}
+  {{ if ne $pages "" }}, p. {{ $pages }}{{ end -}}
+  {{ if ne $doi "" }}, DOI:<a href="https://doi.org/{{ $doi }}">{{ $doi }}</a>{{ end -}}</p>
+
+{{/*  <p>{{- $author -}}, </p>  */}}

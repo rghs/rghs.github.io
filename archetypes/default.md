@@ -1,5 +1,14 @@
 +++
-date = '{{ .Date }}'
+title = "{{ replace .Name "-" " " | title }}"
+date = {{ .Date }}
 draft = true
-title = '{{ replace .File.ContentBaseName "-" " " | title }}'
+
+description = ""
+summary = ""
+
+featureimage = "{{ .Site.Params.cdnBaseUrl }}/{{ .Name }}/feature.webp"
+card = "{{ .Site.Params.cdnBaseUrl }}/{{ .Name }}/card.webp"
+
+categories = [""]
+tags = [""]
 +++

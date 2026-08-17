@@ -1,0 +1,10 @@
+{{- $parts := split . " " -}}
+
+{{- $surname := index $parts (sub (len $parts) 1) -}}
+
+{{- $initials := slice -}}
+{{- range first (sub (len $parts) 1) $parts -}}
+    {{- $initials = $initials | append (printf "%c." (index . 0)) -}}
+{{- end -}}
+
+{{ printf "%s, %s" $surname (delimit $initials "") }}

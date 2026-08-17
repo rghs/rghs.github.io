@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<work:work xmlns:address="http://www.orcid.org/ns/address" xmlns:email="http://www.orcid.org/ns/email" xmlns:history="http://www.orcid.org/ns/history" xmlns:employment="http://www.orcid.org/ns/employment" xmlns:education="http://www.orcid.org/ns/education" xmlns:other-name="http://www.orcid.org/ns/other-name" xmlns:deprecated="http://www.orcid.org/ns/deprecated" xmlns:funding="http://www.orcid.org/ns/funding" xmlns:research-resource="http://www.orcid.org/ns/research-resource" xmlns:service="http://www.orcid.org/ns/service" xmlns:researcher-url="http://www.orcid.org/ns/researcher-url" xmlns:distinction="http://www.orcid.org/ns/distinction" xmlns:internal="http://www.orcid.org/ns/internal" xmlns:membership="http://www.orcid.org/ns/membership" xmlns:person="http://www.orcid.org/ns/person" xmlns:personal-details="http://www.orcid.org/ns/personal-details" xmlns:bulk="http://www.orcid.org/ns/bulk" xmlns:common="http://www.orcid.org/ns/common" xmlns:record="http://www.orcid.org/ns/record" xmlns:keyword="http://www.orcid.org/ns/keyword" xmlns:activities="http://www.orcid.org/ns/activities" xmlns:qualification="http://www.orcid.org/ns/qualification" xmlns:external-identifier="http://www.orcid.org/ns/external-identifier" xmlns:error="http://www.orcid.org/ns/error" xmlns:preferences="http://www.orcid.org/ns/preferences" xmlns:invited-position="http://www.orcid.org/ns/invited-position" xmlns:work="http://www.orcid.org/ns/work" xmlns:peer-review="http://www.orcid.org/ns/peer-review" put-code="180669246" visibility="public">
+    <common:created-date>2025-03-23T11:51:57.179Z</common:created-date>
+    <common:last-modified-date>2026-01-22T21:29:11.533Z</common:last-modified-date>
+    <common:source>
+        <common:source-orcid>
+            <common:uri>https://orcid.org/0000-0001-7288-3445</common:uri>
+            <common:path>0000-0001-7288-3445</common:path>
+            <common:host>orcid.org</common:host>
+        </common:source-orcid>
+        <common:source-name>Robert Hayes</common:source-name>
+    </common:source>
+    <work:title>
+        <common:title>Geometric constraints on tributary fluvial network junction angles</common:title>
+    </work:title>
+    <work:journal-title>Earth Surface Dynamics</work:journal-title>
+    <work:short-description>Abstract. The intersection of two non-parallel planes is a line. Howard (1990), following Horton (1932), proposed that the orientation and slope of a fluvial valley bottom within a tributary network are geometrically constrained by the orientation and slope of the line formed by the intersection of planar approximations to the topography upslope from the tributary junction along the two tributary directions. Previously published analyses of junction angle data support this geometric model, yet junction angles have also been proposed to be controlled by climate and/or optimality principles (e.g., minimum power expenditure). In this paper, we document a test of the Howard (1990) model using ∼107 fluvial network junctions in the conterminous US and a portion of the Loess Plateau, China. Junction angles are consistent with the predictions of the Howard (1990) model when the orientations and slopes are computed for the drainage basins whose outlets are the main valley and each upstream tributary rather than in the traditional way using valley-bottom segments near tributary junctions. When computed in the traditional way, junction angles are a function of slope ratios (as the Howard, 1990, model predicts), but data deviate systematically from the Howard (1990) model. We map the mean junction angles computed along valley bottoms within each 2.5 km×2.5 km pixel of the conterminous USA and document lower mean junction angles in incised Late Cenozoic alluvial piedmont deposits compared to those of incised bedrock/older deposits. We demonstrate using numerical modeling that lower ratios of the small-scale roughness of the initial pre-incision surface to the large-scale/regional slope of a landscape can contribute to lower mean junction angles. Using modern analogs, we demonstrate that Late Cenozoic alluvial piedmonts likely had ratios of mean microtopographic slope to large-scale slope/tilt that were lower (i.e., ∼1) prior to tributary drainage network development than the same ratios of bedrock/older deposits (≫1). This finding provides a means of understanding how the geometric model of Howard (1990) contributes to the result that incised Late Cenozoic alluvial piedmont deposits have lower mean tributary fluvial network junction angles, on average, compared to those of incised bedrock/older deposits. This work demonstrates that the topography of a landscape prior to fluvial incision may exert a key constraint on tributary fluvial network junction angles. This work adds to the list of possible controls on fluvial network junction angles, including climate- and optimality-based models for junction angles that have been the primary focus of research during the past decade.</work:short-description>
+    <work:citation>
+        <work:citation-type>bibtex</work:citation-type>
+        <work:citation-value>@Article{esurf-13-219-2025,
+AUTHOR = {Pelletier, J. D. and Hayes, R. G. and Hoch, O. and Fenerty, B. and McGuire, L. A.},
+TITLE = {Geometric constraints on tributary fluvial network junction angles},
+JOURNAL = {Earth Surface Dynamics},
+VOLUME = {13},
+YEAR = {2025},
+NUMBER = {2},
+PAGES = {219--238},
+URL = {https://esurf.copernicus.org/articles/13/219/2025/},
+DOI = {10.5194/esurf-13-219-2025}
+}</work:citation-value>
+    </work:citation>
+    <work:type>journal-article</work:type>
+    <common:publication-date>
+        <common:year>2025</common:year>
+        <common:month>03</common:month>
+        <common:day>12</common:day>
+    </common:publication-date>
+    <common:external-ids>
+        <common:external-id>
+            <common:external-id-type>doi</common:external-id-type>
+            <common:external-id-value>10.5194/esurf-13-219-2025</common:external-id-value>
+            <common:external-id-normalized transient="true">10.5194/esurf-13-219-2025</common:external-id-normalized>
+            <common:external-id-url>https://doi.org/10.5194/esurf-13-219-2025</common:external-id-url>
+            <common:external-id-relationship>self</common:external-id-relationship>
+        </common:external-id>
+        <common:external-id>
+            <common:external-id-type>issn</common:external-id-type>
+            <common:external-id-value>2196-632X</common:external-id-value>
+            <common:external-id-normalized transient="true">2196-632X</common:external-id-normalized>
+            <common:external-id-url>https://portal.issn.org/resource/ISSN/2196-632X</common:external-id-url>
+            <common:external-id-relationship>part-of</common:external-id-relationship>
+        </common:external-id>
+    </common:external-ids>
+    <common:url>http://dx.doi.org/10.5194/esurf-13-219-2025</common:url>
+    <work:contributors>
+        <work:contributor>
+            <common:contributor-orcid/>
+            <work:credit-name>Jon D. Pelletier</work:credit-name>
+            <work:contributor-attributes>
+                <work:contributor-role>author</work:contributor-role>
+            </work:contributor-attributes>
+        </work:contributor>
+        <work:contributor>
+            <common:contributor-orcid/>
+            <work:credit-name>Robert G. Hayes</work:credit-name>
+            <work:contributor-attributes>
+                <work:contributor-role>author</work:contributor-role>
+            </work:contributor-attributes>
+        </work:contributor>
+        <work:contributor>
+            <common:contributor-orcid/>
+            <work:credit-name>Olivia Hoch</work:credit-name>
+            <work:contributor-attributes>
+                <work:contributor-role>author</work:contributor-role>
+            </work:contributor-attributes>
+        </work:contributor>
+        <work:contributor>
+            <common:contributor-orcid>
+                <common:uri>https://orcid.org/0000-0002-2378-7905</common:uri>
+                <common:path>0000-0002-2378-7905</common:path>
+            </common:contributor-orcid>
+            <work:credit-name>Brendan Fenerty</work:credit-name>
+            <work:contributor-attributes>
+                <work:contributor-role>author</work:contributor-role>
+            </work:contributor-attributes>
+        </work:contributor>
+        <work:contributor>
+            <common:contributor-orcid/>
+            <work:credit-name>Luke A. McGuire</work:credit-name>
+            <work:contributor-attributes>
+                <work:contributor-role>author</work:contributor-role>
+            </work:contributor-attributes>
+        </work:contributor>
+    </work:contributors>
+    <common:language-code>en</common:language-code>
+</work:work>

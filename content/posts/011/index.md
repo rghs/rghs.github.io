@@ -1,0 +1,46 @@
++++
+title = "Summer Fieldwork 2021"
+date = 2021-06-12T21:41:25+01:00
+draft = false
+
+description = "Photos from across the Colorado Plateau, including a visit to Lake Powell."
+summary = "Photos from across the Colorado Plateau, including a visit to Lake Powell."
+
+showWordCount = false
+showReadingTime = false
+showTableOfContents = true
+showAuthor = false
+
+featureimage = "https://img.rghayes.com/011/feature.webp"
+card = "https://img.rghayes.com/011/card.webp"
+
+categories = ["Galleries"]
+tags = ["USA", "Arizona", "Colorado", "Utah", "Fieldwork", "Geology", "Sedimentology", "Jurassic", "Triassic"]
++++
+
+Photos from the penultimate solo field season of my PhD, including a perilous journey to Disappointment Valley and a brief interlude of getting stuck in Lake Powell.
+
+{{< gallery >}}
+  {{< figure src="/r2/011/01.webp" figureClass="grid-w50 md:grid-w33 xl:grid-w25" >}}
+  {{< figure src="/r2/011/02.webp" figureClass="grid-w50 md:grid-w33 xl:grid-w25" >}}
+  {{< figure src="/r2/011/03.webp" figureClass="grid-w50 md:grid-w33 xl:grid-w25" >}}
+  {{< figure src="/r2/011/04.webp" figureClass="grid-w50 md:grid-w33 xl:grid-w25" >}}
+  {{< figure src="/r2/011/05.webp" figureClass="grid-w50 md:grid-w33 xl:grid-w25" >}}
+  {{< figure src="/r2/011/06.webp" figureClass="grid-w50 md:grid-w33 xl:grid-w25" >}}
+  {{< figure src="/r2/011/07.webp" figureClass="grid-w50 md:grid-w33 xl:grid-w25" >}}
+  {{< figure src="/r2/011/08.webp" figureClass="grid-w50 md:grid-w33 xl:grid-w25" >}}
+  {{< figure src="/r2/011/09.webp" figureClass="grid-w50 md:grid-w33 xl:grid-w25" >}}
+  {{< figure src="/r2/011/10.webp" figureClass="grid-w50 md:grid-w33 xl:grid-w25" >}}
+  {{< figure src="/r2/011/11.webp" figureClass="grid-w50 md:grid-w33 xl:grid-w25" >}}
+  {{< figure src="/r2/011/12.webp" figureClass="grid-w50 md:grid-w33 xl:grid-w25" >}}
+  {{< figure src="/r2/011/13.webp" figureClass="grid-w50 md:grid-w33 xl:grid-w25" >}}
+  {{< figure src="/r2/011/14.webp" figureClass="grid-w50 md:grid-w33 xl:grid-w25" >}}
+  {{< figure src="/r2/011/15.webp" figureClass="grid-w50 md:grid-w33 xl:grid-w25" >}}
+  {{< figure src="/r2/011/16.webp" figureClass="grid-w50 md:grid-w33 xl:grid-w25" >}}
+  {{< figure src="/r2/011/17.webp" figureClass="grid-w50 md:grid-w33 xl:grid-w25" >}}
+  {{< figure src="/r2/011/18.webp" figureClass="grid-w50 md:grid-w33 xl:grid-w25" >}}
+  {{< figure src="/r2/011/19.webp" figureClass="grid-w50 md:grid-w33 xl:grid-w25" >}}
+  {{< figure src="/r2/011/20.webp" figureClass="grid-w50 md:grid-w33 xl:grid-w25" >}}
+  {{< figure src="/r2/011/21.webp" figureClass="grid-w50 md:grid-w33 xl:grid-w25" >}}
+  {{< figure src="/r2/011/22.webp" figureClass="grid-w50 md:grid-w33 xl:grid-w25" >}}
+{{< /gallery >}}
